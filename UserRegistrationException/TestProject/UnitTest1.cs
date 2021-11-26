@@ -57,5 +57,22 @@ namespace TestProject
             //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidMobileNumOfUser()
+        {
+            //AAA method
+            //Arrange
+            string message = " ";
+            string expected = "valid";
+            //creating object of moodanalyzer class and passing message
+            UserException exception = new UserException(message);
+
+            //Act
+            string actual = exception.MobileNumValid();
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
